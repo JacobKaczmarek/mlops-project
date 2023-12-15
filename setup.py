@@ -3,7 +3,7 @@ import setuptools
 with open("README.md", "r", encoding="utf-8") as f:
     long_description = f.read()
 
-REPO_NAME = "mlops-project"
+REPO_NAME = "mlops_project"
 AUTHOR = "JacobKaczmarek"
 VERSION = "0.0.0"
 AUTHOR_EMAIL="jacob_kaczmarek@outlook.com"
