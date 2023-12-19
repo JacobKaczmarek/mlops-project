@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms"></script>
+</head>
+
+<body>
+    <form action="/predict" method="post">
+        <div class="h-screen w-full flex flex-col justify-center items-center">
+            <h1 class="text-3xl font-bold mb-6">Wine quality detection</h1>
+            <div class="bg-slate-100 p-5 rounded-md shadow-lg  w-1/2">
+                <div class="grid grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-sm font-medium leading-6 text-gray-900" for="fixed acidity">Fixed
+                            acidity</label>
+                        <div class="relative mt-1 rounded-md shadow-sm">
+                            <input required type="number"
+                                class="block w-full rounded-md border-0 py-1.5 pr-20 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                                placeholder="0.00" name="fixed acidity">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-medium leading-6 text-gray-900" for="volatile acidity">Volatile
+                            acidity</label>
+                        <div class="relative mt-1 rounded-md shadow-sm">
+                            <input required type="number"
+                                class="block w-full rounded-md border-0 py-1.5 pr-20 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                                placeholder="0.00" name="volatile acidity">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-medium leading-6 text-gray-900" for="citric acid">Citric
+                            acid</label>
+                        <div class="relative mt-1 rounded-md shadow-sm">
+                            <input required type="number"
+                                class="block w-full rounded-md border-0 py-1.5 pr-20 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                                placeholder="0.00" name="citric acid">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-medium leading-6 text-gray-900" for="residual sugar">Residual
+                            sugar</label>
+                        <div class="relative mt-1 rounded-md shadow-sm">
+                            <input required type="number"
+                                class="block w-full rounded-md border-0 py-1.5 pr-20 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                                placeholder="0.00" name="residual sugar">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-medium leading-6 text-gray-900"
+                            for="chlorides">Chlorides</label>
+                        <div class="relative mt-1 rounded-md shadow-sm">
+                            <input required type="number"
+                                class="block w-full rounded-md border-0 py-1.5 pr-20 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                                placeholder="0.00" name="chlorides">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-medium leading-6 text-gray-900" for="free sulfur dioxide">Free
+                            sulfur dioxide</label>
+                        <div class="relative mt-1 rounded-md shadow-sm">
+                            <input required type="number"
+                                class="block w-full rounded-md border-0 py-1.5 pr-20 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                                placeholder="0.00" name="free sulfur dioxide">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-medium leading-6 text-gray-900"
+                            for="total sulfur dioxide">Total
+                            sulfur dioxide</label>
+                        <div class="relative mt-1 rounded-md shadow-sm">
+                            <input required type="number"
+                                class="block w-full rounded-md border-0 py-1.5 pr-20 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                                placeholder="0.00" name="total sulfur dioxide">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-medium leading-6 text-gray-900" for="density">Density</label>
+                        <div class="relative mt-1 rounded-md shadow-sm">
+                            <input required type="number"
+                                class="block w-full rounded-md border-0 py-1.5 pr-20 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                                placeholder="0.00" name="density">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-medium leading-6 text-gray-900" for="pH">pH</label>
+                        <div class="relative mt-1 rounded-md shadow-sm">
+                            <input required type="number"
+                                class="block w-full rounded-md border-0 py-1.5 pr-20 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                                placeholder="0.00" name="pH">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-medium leading-6 text-gray-900"
+                            for="sulphates">Sulphates</label>
+                        <div class="relative mt-1 rounded-md shadow-sm">
+                            <input required type="number"
+                                class="block w-full rounded-md border-0 py-1.5 pr-20 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                                placeholder="0.00" name="sulphates">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-medium leading-6 text-gray-900" for="alcohol">Alcohol</label>
+                        <div class="relative mt-1 rounded-md shadow-sm">
+                            <input required type="number"
+                                class="block w-full rounded-md border-0 py-1.5 pr-20 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                                placeholder="0.00" name="alcohol">
+                        </div>
+                    </div>
+                </div>
+
+
+                <button type="submit"
+                    class="bg-violet-600 p-2 rounded-md text-white w-fit h-fit mt-4 mx-auto">Submit</button>
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>
