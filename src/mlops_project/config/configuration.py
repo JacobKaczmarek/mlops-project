@@ -1,5 +1,7 @@
+import os
+from dotenv import load_dotenv
 from mlops_project.constants import *
-from mlops_project.entity.config_entity import DataIngestionConfig, DataTransformationConfig, DataValidationConfig, ModelTrainerConfig
+from mlops_project.entity.config_entity import DataIngestionConfig, DataTransformationConfig, DataValidationConfig, ModelEvaluationConfig, ModelTrainerConfig
 from mlops_project.utils.common import read_yaml, create_directories
 
 class ConfigurationManager:
@@ -78,3 +80,24 @@ class ConfigurationManager:
         )
 
         return model_trainer_config
+    
+
+    def get_model_evaluation_config(self) -> ModelEvaluationConfig:
+        load_dotenv()
+        config = self.config.model_evaluation
+        params = self.params.ElasticNet
+        schema = self.schema.TARGET_COLUMN
+
+        create_directories([config.root_dir])
+
+        model_evaluation_config = ModelEvaluationConfig(
+            root_dir=config.root_dir,
+            test_data_path=config.test_data_path,
+            model_path=config.model_path,
+            all_params=params,
+            metrics_path=config.metrics_path,
+            target_column=schema.name,
+            mlflow_uri=os.environ['MLFLOW_TRACKING_URI']
+        )
+
+        return model_evaluation_config
