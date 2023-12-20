@@ -15,4 +15,4 @@ docker build -t wine-rater .
 docker run -p 8080:8080 wine-rater
 ```
 
-After the container was created the web interface will be available under [[http://localhost:8080]]
+After the container was created the web interface will be available under [http://localhost:8080]
