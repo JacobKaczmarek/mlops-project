@@ -7,7 +7,7 @@ from typing import Any
 from ensure import ensure_annotations
 from box import ConfigBox
 from box.exceptions import BoxValueError
-from mlops_project import logger
+from wine_rater import logger
 
 
 

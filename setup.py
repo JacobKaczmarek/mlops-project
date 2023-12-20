@@ -3,7 +3,7 @@ import setuptools
 with open("README.md", "r", encoding="utf-8") as f:
     long_description = f.read()
 
-REPO_NAME = "mlops_project"
+REPO_NAME = "wine_rater"
 AUTHOR = "JacobKaczmarek"
 VERSION = "0.0.0"
 AUTHOR_EMAIL="jacob_kaczmarek@outlook.com"

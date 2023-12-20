@@ -19,4 +19,4 @@ logging.basicConfig(
     ]
 )
 
-logger = logging.getLogger("mlops_project-logger")
+logger = logging.getLogger("wine_rater-logger")

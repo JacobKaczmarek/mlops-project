@@ -1,7 +1,7 @@
-from mlops_project.components.model_evaluation import ModelEvaluation
-from mlops_project.config.configuration import ConfigurationManager
-from mlops_project.entity.config_entity import ModelEvaluationConfig
-from mlops_project import logger
+from wine_rater.components.model_evaluation import ModelEvaluation
+from wine_rater.config.configuration import ConfigurationManager
+from wine_rater.entity.config_entity import ModelEvaluationConfig
+from wine_rater import logger
 
 
 class ModelEvaluationPipeline:

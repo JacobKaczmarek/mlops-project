@@ -1,6 +1,6 @@
 from pathlib import Path
 import joblib
-from mlops_project.config.configuration import ConfigurationManager
+from wine_rater.config.configuration import ConfigurationManager
 
 
 class PredictionPipeline:

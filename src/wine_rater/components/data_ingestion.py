@@ -2,9 +2,9 @@ import os
 import zipfile
 import urllib.request as request
 from pathlib import Path
-from mlops_project import logger
-from mlops_project.entity.config_entity import DataIngestionConfig
-from mlops_project.utils.common import get_size
+from wine_rater import logger
+from wine_rater.entity.config_entity import DataIngestionConfig
+from wine_rater.utils.common import get_size
 
 
 class DataIngestion:

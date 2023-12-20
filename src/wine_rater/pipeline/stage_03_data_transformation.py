@@ -1,7 +1,7 @@
-from mlops_project import logger
+from wine_rater import logger
 
-from mlops_project.components.data_transformation import DataTransformation
-from mlops_project.config.configuration import ConfigurationManager
+from wine_rater.components.data_transformation import DataTransformation
+from wine_rater.config.configuration import ConfigurationManager
 
 STAGE_NAME = "Data Transformation Stage"
 

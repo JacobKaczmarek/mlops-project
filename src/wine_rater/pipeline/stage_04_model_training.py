@@ -1,6 +1,6 @@
-from mlops_project import logger
-from mlops_project.components.model_trainer import ModelTrainer
-from mlops_project.config.configuration import ConfigurationManager
+from wine_rater import logger
+from wine_rater.components.model_trainer import ModelTrainer
+from wine_rater.config.configuration import ConfigurationManager
 
 STAGE_NAME = "Model Training Stage"
 

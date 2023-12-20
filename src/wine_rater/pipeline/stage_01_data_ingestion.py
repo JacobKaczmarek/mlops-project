@@ -1,8 +1,8 @@
 
 
-from mlops_project.components.data_ingestion import DataIngestion
-from mlops_project.config.configuration import ConfigurationManager
-from mlops_project import logger
+from wine_rater.components.data_ingestion import DataIngestion
+from wine_rater.config.configuration import ConfigurationManager
+from wine_rater import logger
 
 
 STAGE_NAME = "Data Ingestion Stage"

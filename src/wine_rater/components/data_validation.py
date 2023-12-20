@@ -1,6 +1,6 @@
 import pandas as pd
-from mlops_project.entity.config_entity import DataValidationConfig
-from mlops_project import logger
+from wine_rater.entity.config_entity import DataValidationConfig
+from wine_rater import logger
 
 
 class DataValidation:

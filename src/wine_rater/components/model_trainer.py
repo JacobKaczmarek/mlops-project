@@ -3,7 +3,7 @@ import pandas as pd
 from sklearn.linear_model import ElasticNet
 import joblib
 
-from mlops_project.entity.config_entity import ModelTrainerConfig
+from wine_rater.entity.config_entity import ModelTrainerConfig
 
 class ModelTrainer:
     def __init__(self, config: ModelTrainerConfig):

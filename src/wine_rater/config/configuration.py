@@ -1,8 +1,8 @@
 import os
 from dotenv import load_dotenv
-from mlops_project.constants import *
-from mlops_project.entity.config_entity import DataIngestionConfig, DataTransformationConfig, DataValidationConfig, ModelEvaluationConfig, ModelTrainerConfig
-from mlops_project.utils.common import read_yaml, create_directories
+from wine_rater.constants import *
+from wine_rater.entity.config_entity import DataIngestionConfig, DataTransformationConfig, DataValidationConfig, ModelEvaluationConfig, ModelTrainerConfig
+from wine_rater.utils.common import read_yaml, create_directories
 
 class ConfigurationManager:
     def __init__(

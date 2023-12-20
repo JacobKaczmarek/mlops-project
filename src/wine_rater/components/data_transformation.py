@@ -2,8 +2,8 @@ import os
 import pandas as pd
 from sklearn.model_selection import train_test_split
 
-from mlops_project.entity.config_entity import DataTransformationConfig
-from mlops_project import logger
+from wine_rater.entity.config_entity import DataTransformationConfig
+from wine_rater import logger
 
 
 class DataTransformation:
